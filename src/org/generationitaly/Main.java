@@ -35,9 +35,10 @@ public class Main {
 		String risposta,scelta;
 		String nome,sistemaOperativo,download;
 		float prezzo,media;
-		int quantità,stelle;
+		int quantit,stelle;
 		do 
 		{
+			System.out.println("DAJE ROMA DAJE ");
 			System.out.print("Che nome vuoi dare all'applicazione?");
 			nome=sc.nextLine();
 			System.out.print("In quale sistema operativo deve funzionare?");
@@ -47,7 +48,7 @@ public class Main {
 			MobileApp app =new MobileApp(nome,sistemaOperativo,prezzo);
 			  System.out.println("Ecco a te l' app:" );
 			  System.out.println("-".repeat (30));
-			  System.out.println("Nome: " +app.getNome() + "\nSistema Operativo:" + app.getSistemaOperativo() + "\nPrezzo: " + app.getPrezzo()+  "£");
+			  System.out.println("Nome: " +app.getNome() + "\nSistema Operativo:" + app.getSistemaOperativo() + "\nPrezzo: " + app.getPrezzo()+  "ï¿½");
 				System.out.println("Ecco a te le operazioni : \n" + "-".repeat (30));
 				do 
 				{	
@@ -65,8 +66,8 @@ public class Main {
 					 break;
 				case("2"):
 					System.out.println("Quanti download vuoi fare?");
-				    quantità=Integer.parseInt(sc.nextLine());
-					app.downnloadMultiplo(quantità);
+				    quantitï¿½=Integer.parseInt(sc.nextLine());
+					app.downnloadMultiplo(quantitï¿½);
 					break;
 				case ("3"):
 					 System.out.println("Quante stelle desideri dare ?");
@@ -80,9 +81,9 @@ public class Main {
 					break;
 				}
 			//	
-				System.out.println(" Il ricavo è :" +  String.format("%.2f£",app.getRicavoTotale()) + "£" + " \nmedia valutazione: "+ app.getValutazioneMedia());
+				System.out.println(" Il ricavo ï¿½ :" +  String.format("%.2fï¿½",app.getRicavoTotale()) + "ï¿½" + " \nmedia valutazione: "+ app.getValutazioneMedia());
 				System.out.println(("-".repeat(30)));
-			/*System.out.println("Vuoi tornare al menù ?(si/no)");
+			/*System.out.println("Vuoi tornare al menï¿½ ?(si/no)");
 				risposta=sc.nextLine(); */
 				}while ((!scelta.equals("4")));
 				System.out.println("Vuoi tornare alla creazione di un app ?(si/no)");
